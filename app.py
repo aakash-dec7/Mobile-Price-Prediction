@@ -12,7 +12,7 @@ inference = Inference()
 @app.route("/", methods=["GET"])
 def home_page():
     return render_template(
-        "index.html", price_range_prediction="Mobile Price Range Prediction"
+        "index.html", price_range_prediction="Price Range Prediction"
     )
 
 

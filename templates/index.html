@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Price Range Prediction</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
         body {
-            background: linear-gradient(to right, #4e6c5e, #1f3505);
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Quicksand', sans-serif;
             padding: 20px;
         }
 
         h2 {
             text-align: center;
-            font-size: 2rem;
-            margin-bottom: 30px;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
         }
 
         form {
-            max-width: 600px;
+            max-width: 700px;
             margin: auto;
-            background-color: #162a1f;
-            border: 1px solid #ccc;
+            background: rgb(17 32 57);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
 
         label {
@@ -39,47 +42,57 @@
         input[type="number"],
         select {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
-            border-radius: 8px;
+            border-radius: 10px;
             box-sizing: border-box;
             font-size: 1rem;
+            background: #f0f0f0;
+            color: #333;
         }
 
         input[type="submit"] {
-            background: #275d39;
+            background: linear-gradient(to right, #0a4071, #054785);
             color: white;
             cursor: pointer;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 8px;
+            padding: 14px 25px;
+            border: 2px solid white;
+            border-radius: 12px;
             width: 100%;
-            font-size: 1rem;
+            font-size: 1.1rem;
             margin-top: 5%;
-            transition: background 0.3s ease;
+            transition: transform 0.2s ease, background 0.3s ease;
         }
 
         input[type="submit"]:hover {
-            background: #09a048;
+            transform: scale(1.03);
+            background: linear-gradient(to right, #054785, #0a4071);
         }
 
         .prediction-result {
-            max-width: 600px;
+            max-width: 700px;
             margin: 30px auto;
-            border: 1px solid #322929;
+            border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 20px;
-            border-radius: 15px;
-            background-color: transparent;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            font-size: 1.2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             text-align: center;
+        }
+
+        option {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
 
 <body>
-    <h2>📱 Mobile Price Range Prediction 📱</h2>
+    <h2>
+        <| Mobile Price Range Prediction |>
+    </h2>
 
     {% if price_range_prediction %}
     <div class="prediction-result">
