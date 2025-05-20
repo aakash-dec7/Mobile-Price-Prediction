@@ -187,7 +187,7 @@ http://localhost:3000/
 
 This project demonstrates the effectiveness of ensemble learning methods in predicting mobile phone price ranges based on hardware and connectivity features. Among the models evaluated, XGBoost achieved the highest performance with a cross-validation accuracy of over 90%, highlighting its strength in capturing complex patterns within the data.
 
-By leveraging well-tuned models and a reproducible pipeline powered by DVC, this system provides a scalable foundation for price prediction tasks in e-commerce, retail analytics, and recommendation engines. Future improvements could include feature engineering, model ensembling, or incorporating more advanced deep learning techniques for further accuracy gains.
+By leveraging well-tuned models and a reproducible pipeline powered by DVC, this system provides a scalable foundation for price prediction tasks in e-commerce, retail analytics, and recommendation engines. Future improvements could include feature engineering, model ensembling, or incorporating more advanced Machine Learning techniques for further accuracy gains.
 
 ## License
 
