@@ -1,6 +1,6 @@
 # Mobile Price Prediction
 
-This repository aims to build a **Machine Learning** model that can predict the price range of mobile phones based on their technical specifications and features. With the growing variety of smartphones in the market, consumers and retailers can benefit from a system that estimates price categories - ranging from low-cost to very high-end—based solely on hardware and connectivity features.
+This repository aims to build a **Machine Learning** model that can predict the price range of mobile phones based on their technical specifications and features. With the growing variety of smartphones in the market, consumers and retailers can benefit from a system that estimates price categories - ranging from low-cost to very high-end - based solely on hardware and connectivity features.
 
 ## Model Architecture
 
